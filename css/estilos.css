@@ -1,36 +1,101 @@
-body 
-    {
-      text-align: center;
-      padding-left: 11em;
-      color: rgb(128, 0, 0);
-      background-color: #7d7d80
-    } 
-    h1
-    {
-        font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif 
-    }
-    h3 
-    {
-        font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif 
-    }
-    ul.navbar 
-    {   
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 2em;
-        left: 1em;
-        width: 9em 
-    }
-    ul.navbar li 
-    {
-        background: white;
-        margin: 0.5em 0;
-        padding: 0.3em;
-        border-right: 1em solid black 
-    }
-  ul.navbar a {text-decoration: none}
-  a:link {color: blue }
-  a:visited {color: purple }
-    
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+/*----------------------Variable*/
+:root
+{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:black;
+/*Espaciado*/
+--space:10px;
+/*Tipografia*/
+--normal:12px;
+/*Box Shadow*/
+--box:0 0 1p rgb(197, 193, 193)
+}
+
+/*----------------------Variable*/
+html,body
+{
+    padding:0px;
+    margin:0px;
+    font-size: 15px;
+    font-family: 'Comic Neue', cursive;
+}
+nav
+{
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    /*color: var(--white-color);*/
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul 
+{
+    display: flex;
+}
+
+nav li 
+{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a
+{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover
+{
+    color: var(--white-color);
+}
+/*---------------------- Main sextion --*/
+.main_section
+{
+    padding: 10%;
+    text-align: center;
+}
+
+.products
+{
+    background-image: url("../images/1.png");
+    max-height: var(--space);
+    background-size: cover;
+    background-position: center top;
+    padding: 13%;
+    display: flex; 
+}
+.product
+{
+    padding: 150px;
+    margin-top: -400;
+}
+.products .content 
+{
+    background-color: rgba(100, 93, 93, 0.377);
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+
+.img_content
+{
+    text-align: center;
+}
+.main_button
+{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--space);
+    color: var(--white-color);
+    border:0;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+.main_button:hover
+{
+    background-color: rgb(6, 107, 15);
+}
