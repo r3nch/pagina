@@ -9,6 +9,7 @@
   /*------ Espaciado */
   --space:10px;
   --space-2:20px;
+  --box: 0px 0 2px 1px #e6e5e9;
 }
 
 /* -------------------------------------------  */
@@ -18,10 +19,10 @@ html, body{
   font-family: helvetica;
   color: var(--black-color);
 }
+p, label
+{font-size: var(--normal);}
 
-p{
-  font-size: var(--normal);
-}
+
 
 nav{
   display: flex;
@@ -159,3 +160,42 @@ footer{
   padding: var(--space);
   color: var(--white-color);
 }
+
+.container
+{
+  text-align: center;
+  
+}
+
+.col-8 
+{
+padding: auto;
+}
+
+/* ------------------------------------------- Venta */
+.modulo_pago
+{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+  text-align: left;
+}
+
+.img_pago img
+{
+  max-width: 150px;
+  text-align: center;
+  margin: auto;
+}
+
+.data
+{
+  margin-top: var(--space);
+  width: 100%;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+/* ------------------------------------------- Venta */
+
